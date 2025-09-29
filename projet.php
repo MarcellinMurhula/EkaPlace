@@ -3,7 +3,8 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Connexion à la base de données
-    $mysqli = new mysqli("localhost", "root", "", "essaie_sql");
+    $mysqli = new mysqli("if0_40055018", "sql306.infinityfree.com", "Marc804o05", "if0_40055018_db_ekaplace", 3306);
+     // Vérification de la connexion
     if ($mysqli->connect_errno) {
         die("Échec de la connexion : " . $mysqli->connect_errno);
     }
